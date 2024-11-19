@@ -1,3 +1,4 @@
+-- setup rose-pine
 require("rose-pine").setup({
     variant = "main", -- auto, main, moon, or dawn
     dim_inactive_windows = false,
@@ -73,6 +74,3 @@ require("rose-pine").setup({
 })
 
 vim.cmd("colorscheme rose-pine")
--- vim.cmd("colorscheme rose-pine-main")
--- vim.cmd("colorscheme rose-pine-moon")
--- vim.cmd("colorscheme rose-pine-dawn")

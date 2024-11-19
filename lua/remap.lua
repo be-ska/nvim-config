@@ -7,16 +7,18 @@ vim.g.mapleader = " "
 -- pv: file expoler
 --
 --- Telescope (after/plugin/telescope)
--- pp: Telescope find git
--- pf: Telescope find global
--- ps: Telescope grep
+-- tt: Telescope find git
+-- tf: Telescope find global
+-- ts: Telescope grep
 --
 --- Harpoon (after/plugin/harpoon)
 -- C-a add file to list
 -- C-e open file list
 -- C-h C-j C-k C-l open file 1-2-3-4
 -- C-p C-n open previous and next file
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+--- nvim-tree (after/plugin/nvim-tree)
+-- pv: toggle nvim-tree sidebar
 
 -- use J and K to move selected text in visual mode up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
