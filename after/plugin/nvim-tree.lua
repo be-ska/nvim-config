@@ -13,25 +13,29 @@ nvimtree.setup()
 
 -- OR setup with some options
 nvimtree.setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-    relativenumber = true, -- Enable relative line numbers
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-  update_focused_file = {
-      enable = true,         -- Disable automatic focusing
-      update_root = true,    -- Disable auto-root update
-  },
-  sync_root_with_cwd = true,
-  respect_buf_cwd = true,
+    git = {
+        enable = true,
+        timeout = 5000, -- Increase timeout to 5000ms (5 seconds)
+    },
+    sort = {
+        sorter = "case_sensitive",
+    },
+    view = {
+        width = 30,
+        relativenumber = true, -- Enable relative line numbers
+    },
+    renderer = {
+        group_empty = true,
+    },
+    filters = {
+        dotfiles = true,
+    },
+    update_focused_file = {
+        enable = true,         -- Disable automatic focusing
+        update_root = true,    -- Disable auto-root update
+    },
+    sync_root_with_cwd = true,
+    respect_buf_cwd = true,
 })
 
 -- remap

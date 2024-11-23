@@ -1,9 +1,12 @@
 return {
     {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
         "nvim-tree/nvim-tree.lua",
         dependencies = {"nvim-tree/nvim-web-devicons"}
     },
-    "mg979/vim-visual-multi",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	'neovim/nvim-lspconfig',
