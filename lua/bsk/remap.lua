@@ -1,4 +1,3 @@
-
 vim.g.mapleader = " "
 
 ---
@@ -37,13 +36,11 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<leader>zig", "<cmd>LspRestart<cr>")
 
--- select text, paste over and preserve the copied text
-vim.keymap.set("x", "<leader>p", [["_dP]])
-
--- system clipboard copy and paste
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
+-- yanks go in the clipboard if prefixed by the leader key, y works in vim only, <leader>y copies to clipboard.
+vim.keymap.set('n', '<leader>y', '\"+y')
+vim.keymap.set('v', '<leader>y', '\"+y')
+vim.keymap.set('n', '<leader>Y', '\"+Y')
+vim.keymap.set('n', '<leader>p', '\"+p')
 
 -- never enter Ex mode
 vim.keymap.set("n", "Q", "<nop>")

@@ -1,3 +1,4 @@
+-- Thanks bastard for git
 return {
     "tpope/vim-fugitive",
     config = function()

@@ -1,5 +1,3 @@
 require('bsk.lazy')
-require('bsk.palette')
-require('bsk.plugin')
 require('bsk.remap')
 require('bsk.set')
