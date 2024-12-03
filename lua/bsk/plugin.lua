@@ -16,7 +16,6 @@ return {
 	'hrsh7th/cmp-nvim-lsp',
 	'hrsh7th/nvim-cmp',
 	"mbbill/undotree",
-	"tpope/vim-fugitive",
 	'tpope/vim-sensible',
 	{
 		"ThePrimeagen/harpoon",
