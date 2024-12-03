@@ -32,7 +32,7 @@ nvimtree.setup({
     },
     update_focused_file = {
         enable = true,         -- Disable automatic focusing
-        update_root = true,    -- Disable auto-root update
+        update_root = false,    -- Disable auto-root update
     },
     sync_root_with_cwd = true,
     respect_buf_cwd = true,

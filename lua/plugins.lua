@@ -1,4 +1,7 @@
 return {
+    {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
+    'normen/vim-pio',
+    'tpope/vim-commentary',
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
